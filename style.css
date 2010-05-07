@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color: #47C0BB;
+	background-image: url("tile.png");
+}
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+	margin: 20px 30px;
+	color: #444;
+}
+@font-face {
+	font-family: chunk;
+	src: url("Chunkfive.otf");
+}
+h1 {
+	background-image: url("h1.png");
+	background-repeat: no-repeat;
+	width: 920px;
+	height: 165px;
+	margin: 0px auto;
+	text-indent: -9999px;
+}
+h2 {
+	color: #D76D00;
+	font-family: chunk, arial, helvetica, sans-serif;
+	font-size: 22px;
+	letter-spacing: .1em;
+	background-color: #FFB830;
+	background-image: url("h2_points.png");
+	background-position: right;
+	background-repeat: no-repeat;
+	width: 745px;
+	padding: 10px 0px 8px 55px;
+	margin: 20px 0px 20px -40px;
+}
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 22px;
+	margin-left: 30px;
+	color: #444;
+}
+hr {
+	margin-top: 30px;
+	border: solid 1px #e1e1e1;
+}
+.h2_shadow {
+	margin: -20px 0px 0px -40px;
+	float: left;
+}
+#main_container {
+	background-image: url("shadow.png");
+	background-position: center;
+	background-repeat: repeat-y;
+}
+#content {
+	width: 960px;
+	margin: 0px auto;
+	padding: 20px 0px 5px 0px;
+	background-color: #fff;
+}
+#external_links_container {
+	width: 160px;
+	height: 650px;
+	border-left: solid 1px #e1e1e1;
+	float: right;
+	position: relative;
+	text-align: center;
+	margin: 20px 0px 0px 30px;
+}
+#external_links_container img {
+	margin-bottom: 30px;
+}
+#text_field {
+	width: 400px;
+	height: 36px;
+	padding-left: 10px;
+	margin-left: 30px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	font-size: 20px;
+	color: #444;
+}
+#submit_button {
+	color: #D76D00;
+	background-color: #FFB830;
+	font-size: 20px;
+	border: none;
+	padding: 8px 20px;
+	margin-left: 30px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+#submit_button:hover {
+	color: #FFB830;
+	background-color: #D76D00;
+	cursor: hand;
+	cursor: pointer;
+}
+#copyright {
+	text-align: right;
+}
+#smartlogic {
+	vertical-align: middle;
+	margin-top: -8px;
+}
+	
