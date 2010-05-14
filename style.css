@@ -5,12 +5,22 @@ body {
 	background-color: #47C0BB;
 	background-image: url("tile.png");
 }
-p {
+p, a {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	line-height: 26px;
-	margin: 20px 30px;
+}
+p {
 	color: #444;
+	margin: 20px 30px;
+}
+a {
+	color: #3CC;
+	margin: 20px 0px;
+	text-decoration: none;
+}
+a:hover {
+	color: #FFB830;
 }
 @font-face {
 	font-family: chunk;
@@ -48,7 +58,7 @@ hr {
 	margin-top: 30px;
 	border: solid 1px #e1e1e1;
 }
-.h2_shadow {
+h2 + img {
 	margin: -20px 0px 0px -40px;
 	float: left;
 }
@@ -65,7 +75,7 @@ hr {
 }
 #external_links_container {
 	width: 160px;
-	height: 650px;
+	height: 800px;
 	border-left: solid 1px #e1e1e1;
 	float: right;
 	position: relative;
@@ -101,8 +111,11 @@ hr {
 	cursor: hand;
 	cursor: pointer;
 }
+#bottom_row {
+	text-align: center;
+}
 #copyright {
-	text-align: right;
+	float: right;
 }
 #smartlogic {
 	vertical-align: middle;
