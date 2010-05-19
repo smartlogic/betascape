@@ -1,0 +1,191 @@
+<!doctype html> 
+<html> 
+    <head> 
+        <meta charset="UTF-8" /> 
+        <title>Betascape</title> 
+        <style type="text/css" media="screen">@import "jqtouch.min.css";</style> 
+        <style type="text/css" media="screen">@import "theme.min.css";</style> 
+        <script src="jquery.1.3.2.min.js" type="text/javascript" charset="utf-8"></script> 
+        <script src="jqtouch.min.js" type="application/x-javascript" charset="utf-8"></script> 
+        <script type="text/javascript" charset="utf-8"> 
+            var jQT = new $.jQTouch({
+                icon: '/mobile/bohconf-icon.png',
+                statusBar: 'black',
+ 
+                preloadImages: [
+                    'button.png',
+                    'back_button.png',
+                    'back_button_clicked.png',
+                    'toolbar.png',
+                    'chevron.png',
+                    'sls-logo-16.png'
+                ]
+            });
+            // Some sample Javascript functions:
+            $(function(){
+                $('a[target="_blank"]').click(function() {
+                    if (confirm('This link opens in a new window.')) {
+                        return true;
+                    } else {
+                        $(this).removeClass('active');
+                        return false;
+                    }
+                });
+                // Orientation callback event
+                $('body').bind('turn', function(e, data){
+                    $('#orient').html('Orientation: ' + data.orientation);
+                });
+            });
+        </script> 
+        <style type="text/css" media="screen"> 
+            body.fullscreen #home .info {
+                display: none;
+            }
+            .current {
+                padding-bottom: 40px;
+            }
+            p {
+              padding: 10px 4px;
+              font-size: 16px;
+              line-height: 24px;
+            }
+            p a {
+              color: #fff;
+              font-weight: bold;
+              text-decoration: none;
+            }
+ 
+            .footer {
+              background: -webkit-gradient(linear, 0% 0, 0% 100%, from(#333), color-stop(0.6, #333), to(#666));
+              border-top: 1px solid #555;
+              padding: 8px 0px;
+              text-align: center;
+              position: absolute;
+              bottom: 0;
+              width: 100%;
+              font-size: 12px;
+            }
+            .footer img {
+              vertical-align: middle;
+            }
+            .description h3 {
+              color: #FFF;
+              text-shadow: rgba(0,0,0,0.19921) 0 1px 1px;
+              text-align: center;
+              padding: 3px 0 5px;
+              background: -webkit-gradient(linear, 0% 0, 0% 100%, from(#4C4D4E), to(#404142));
+              border-top: 1px solid #333;
+              -webkit-box-shadow: rgba(0, 0, 0, 0.296875) 1px 1px 3px;
+            }
+			#submit_button {
+				overflow: hidden;
+				margin: 0;
+				border-width: 0 5px;
+				padding: 0 8px;
+				width: auto;
+				height: 30px;
+				line-height: 30px;
+				font-family: inherit;
+				font-size: 12px;
+				font-weight: bold;
+				color: #fff;
+				text-shadow: rgba(0,0,0,0.5) 0 -1px 0;
+				text-overflow: ellipsis;
+				text-decoration: none;
+				white-space: nowrap;
+				background: none;
+				-webkit-border-image: url("button.png") 0 5 0 5;
+			}
+        </style> 
+    </head> 
+    <body> 
+        <div id="home" class="current"> 
+            <div class="toolbar"> 
+                <h1>Betascape</h1> 
+            </div> 
+            <ul class="rounded"> 
+              <li class="arrow"><a href="#what_is_betascape">What is Betascape?</a></li> 
+              <li class="arrow"><a href="#schedule">Schedule</a></li>
+              <li class="arrow"><a href="#whats_new">What's New?</a></li>
+              <li class="arrow"><a href="#in_the_news">In the News</a></li>
+            </ul> 
+            <ul class="rounded"> 
+              <li class="arrow"><a href="http://www.twitter.com/betascape" target="_blank">Twitter</a></li> 
+              <li class="arrow"><a href="http://www.bmoresmart.com" target="_blank">BmoreSmart</a></li> 
+            </ul> 
+            <ul class="rounded"> 
+              <li class="arrow"><a href="http://www.betascape.org" target="_blank">View Full Site</a></li> 
+            </ul> 
+            <div class="footer"> 
+                &copy; 2010 <a href="http://www.smartlogicsolutions.com" target="_blank"><img id="sls-logo" src="sls-logo-16.png" alt="SmartLogic"/></a>
+            </div> 
+        </div> 
+        <div id="what_is_betascape"> 
+            <div class="toolbar"> 
+                <h1>What is Betascape?</h1> 
+                <a class="back" href="#">Home</a> 
+            </div> 
+            <div class="description"> 
+              <p>From July 16 - 18th, 2010, Betascape will showcase innovative technology through a three-day series of demonstrations, exhibits, workshops, and social events focused on cutting edge, experimental, and interactive technology.</p>  
+            </div> 
+            <div class="footer"> 
+                &copy; 2010 <a href="http://www.smartlogicsolutions.com" target="_blank"><img id="sls-logo" src="sls-logo-16.png" alt="SmartLogic"/></a>
+            </div> 
+        </div> 
+        <div id="schedule"> 
+            <div class="toolbar"> 
+                <h1>Schedule</h1> 
+                <a class="back" href="#">Home</a> 
+            </div> 
+            <div class="description"> 
+            	<h3 class="event">Betascape Technology Exhibits</h3>
+            	<p>July 16 - 18th, in front of the MICA Brown Center.<p>
+            	<h3 class="event">Betascape Gaming Hall</h3>
+            	<p>July 16 - 18th, Cafe Doris in the MICA Fox Building.</p>
+            	<h3 class="event">Special Events</h3>
+            	<p>Betascape Kick-Off Party and Speaker Series - July 15th, 7 - 9pm, Windup Space.</p>    
+            </div> 
+            <div class="footer"> 
+                &copy; 2010 <a href="http://www.smartlogicsolutions.com" target="_blank"><img id="sls-logo" src="sls-logo-16.png" alt="SmartLogic"/></a>
+            </div> 
+        </div> 
+        <div id="whats_new"> 
+            <div class="toolbar"> 
+                <h1>What's New?</h1> 
+                <a class="back" href="#">Home</a> 
+            </div> 
+            <div class="description"> 
+           		<h3>Betascape Logo Contest – Enter Now.</h3>
+					<p>We are calling on all of the creative talent in and around Maryland to make their mark on Betascape by submitting a logo design to the Betascape logo contest, running through May 23rd, 2010.</p>
+
+					<p>To enter, just email your logo design to info@betascape.org and note your name and the company name, if you are submitting on behalf of a company.</p>
+
+					<p>Our planning committee of 20 or so individuals will vote on the winning logo in the last week of May and select the winner by the end of May.</p>
+
+					<p>As the winner, the Betascape team will make sure to let everyone know about your work and provide a note of thanks on the website.</p>
+            </div> 
+            <div class="footer"> 
+                &copy; 2010 <a href="http://www.smartlogicsolutions.com" target="_blank"><img id="sls-logo" src="sls-logo-16.png" alt="SmartLogic"/></a>
+            </div> 
+        </div> 
+        <div id="in_the_news"> 
+            <div class="toolbar"> 
+                <h1>In the News</h1> 
+                <a class="back" href="#">Home</a> 
+            </div> 
+            <div class="description"> 
+              	<p><a href="http://baltimore.bizjournals.com/baltimore/stories/2010/05/17/story11.html" target="_blank">Businesses Sought to Sponsor Artscapes's Tech-Focused Sideshow</a> - Baltimore Business Journal</p>
+            
+            	<p><a href="http://weblogs.baltimoresun.com/news/technology/2010/04/artscapebetascape_moving_forwa.html" target="_blank">Artscapes's Betascape Moving Forward</a> - The Baltimore Sun</p>
+            
+            	<p><a href="http://articles.baltimoresun.com/2010-04-13/business/bs-bz-baltimore-betascape-20100412_1_interactive-media-festival-component-hugh-forrest" target="_blank">BmoreSmart Wants to Add Tech Component to Artscape</a> - The Baltimore Sun</p> 
+            </div> 
+            <div class="footer"> 
+                &copy; 2010 <a href="http://www.smartlogicsolutions.com" target="_blank"><img id="sls-logo" src="sls-logo-16.png" alt="SmartLogic"/></a>
+            </div> 
+        </div> 
+        
+                
+        </div> 
+    </body> 
+</html> 
