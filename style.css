@@ -5,12 +5,22 @@ body {
 	background-color: #47C0BB;
 	background-image: url("tile.png");
 }
-p {
+p, a {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	line-height: 26px;
-	margin: 20px 30px;
+}
+p {
 	color: #444;
+	margin: 20px 30px;
+}
+a {
+	color: #3CC;
+	margin: 20px 0px;
+	text-decoration: none;
+}
+a:hover {
+	color: #FFB830;
 }
 @font-face {
 	font-family: chunk;
@@ -48,7 +58,7 @@ hr {
 	margin-top: 30px;
 	border: solid 1px #e1e1e1;
 }
-.h2_shadow {
+h2 + img {
 	margin: -20px 0px 0px -40px;
 	float: left;
 }
@@ -63,9 +73,22 @@ hr {
 	padding: 20px 0px 5px 0px;
 	background-color: #fff;
 }
+#menu {
+	margin: 30px;
+}
+#menu a {
+	background-color: #ffb830;
+	color: #d76d00;
+	padding: 10px 20px;
+	margin-right: 20px;
+}
+#menu a:hover {
+	background-color: #d76d00;
+	color: #ffb830;
+}
 #external_links_container {
 	width: 160px;
-	height: 650px;
+	height: 1000px;
 	border-left: solid 1px #e1e1e1;
 	float: right;
 	position: relative;
@@ -75,17 +98,25 @@ hr {
 #external_links_container img {
 	margin-bottom: 30px;
 }
-#text_field {
+.event + p {
+	margin-bottom: 45px;
+}
+input[type="text"], textarea {
 	width: 400px;
-	height: 36px;
 	padding-left: 10px;
-	margin-left: 30px;
+	margin: 0px 0px 30px 30px;
 	-moz-border-radius: 8px;
 	-webkit-border-radius: 8px;
 	font-size: 20px;
 	color: #444;
 }
-#submit_button {
+input[type="text"] {
+	height: 36px;
+}
+textarea {
+	height: 100px;
+}
+input[type="submit"] {
 	color: #D76D00;
 	background-color: #FFB830;
 	font-size: 20px;
@@ -95,14 +126,17 @@ hr {
 	-moz-border-radius: 8px;
 	-webkit-border-radius: 8px;
 }
-#submit_button:hover {
+input[type="submit"]:hover {
 	color: #FFB830;
 	background-color: #D76D00;
 	cursor: hand;
 	cursor: pointer;
 }
+#bottom_row {
+	text-align: center;
+}
 #copyright {
-	text-align: right;
+	float: right;
 }
 #smartlogic {
 	vertical-align: middle;
