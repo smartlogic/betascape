@@ -15,31 +15,31 @@ p {
 	margin: 20px 30px;
 }
 a {
-	color: #3CC;
+	color: #57b7df;
 	margin: 20px 0px;
 	text-decoration: none;
 }
 a:hover {
-	color: #FFB830;
+	color: #FCBA63;
 }
 @font-face {
 	font-family: chunk;
 	src: url("Chunkfive.otf");
 }
 h1 {
-	background-image: url("h1.png");
+	background-image: url("betascape-logo.png");
 	background-repeat: no-repeat;
-	width: 920px;
+	width: 905px;
 	height: 165px;
 	margin: 0px auto;
 	text-indent: -9999px;
 }
 h2 {
-	color: #D76D00;
+	color: #D67F2A;
 	font-family: chunk, arial, helvetica, sans-serif;
 	font-size: 22px;
 	letter-spacing: .1em;
-	background-color: #FFB830;
+	background-color: #FCBA63;
 	background-image: url("h2_points.png");
 	background-position: right;
 	background-repeat: no-repeat;
@@ -63,8 +63,8 @@ h2 + img {
 	float: left;
 }
 #main_container {
-	background-image: url("shadow.png");
-	background-position: center;
+	background-image: url("a-little-shadow.png");
+	background-position: 60px center;
 	background-repeat: repeat-y;
 }
 #content {
@@ -77,14 +77,14 @@ h2 + img {
 	margin: 30px;
 }
 #menu a {
-	background-color: #ffb830;
-	color: #d76d00;
+	background-color: #FCBA63;
+	color: #D67F2A;
 	padding: 10px 20px;
 	margin-right: 20px;
 }
 #menu a:hover {
-	background-color: #d76d00;
-	color: #ffb830;
+	background-color: #D67F2A;
+	color: #FCBA63;
 }
 #external_links_container {
 	width: 160px;
@@ -117,8 +117,8 @@ textarea {
 	height: 100px;
 }
 input[type="submit"] {
-	color: #D76D00;
-	background-color: #FFB830;
+	color: #D67F2A;
+	background-color: #FCBA63;
 	font-size: 20px;
 	border: none;
 	padding: 8px 20px;
@@ -127,8 +127,8 @@ input[type="submit"] {
 	-webkit-border-radius: 8px;
 }
 input[type="submit"]:hover {
-	color: #FFB830;
-	background-color: #D76D00;
+	color: #FCBA63;
+	background-color: #D67F2A;
 	cursor: hand;
 	cursor: pointer;
 }
