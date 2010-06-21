@@ -2,7 +2,7 @@
 /* CSS Document */
 
 body {
-	background-color: #47C0BB;
+	background-color: #57b7df;
 	background-image: url("tile.png");
 }
 p, a {
@@ -63,15 +63,18 @@ h2 + img {
 	float: left;
 }
 #main_container {
-	background-image: url("a-little-shadow.png");
-	background-position: 60px center;
-	background-repeat: repeat-y;
+	/*background-image: url("a-little-shadow.png");
+	background-position: 41% 50%;
+	background-repeat: repeat-y; */
 }
 #content {
 	width: 960px;
 	margin: 0px auto;
 	padding: 20px 0px 5px 0px;
 	background-color: #fff;
+	-moz-box-shadow: 0 0 60px #333;
+	-webkit-box-shadow: 0 0 60px #333;
+	box-shadow: 0 0 60px #333;
 }
 #menu {
 	margin: 30px;
