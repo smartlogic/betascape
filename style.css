@@ -57,6 +57,20 @@ h3 {
 	cursor: hand;
 	cursor: pointer;
 }
+h4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 22px;
+	padding: 5px 0px 5px 30px;
+	color: #444;
+}
+h5 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	padding: 20px 0px 5px 45px;
+	color: #444;
+}
 hr {
 	margin-top: 30px;
 	border: solid 1px #e1e1e1;
@@ -80,6 +94,7 @@ h2 + img {
 	position: absolute;
 	bottom: 5px;
 	left: 555px;
+	width: 345px;
 }
 #header p, #header a {
 	font-size: 22px;
@@ -103,15 +118,15 @@ h2 + img {
 	padding: 10px 36px 10px 14px;
 	margin-right: 15px;
 }
-#menu a[href="#what_is_betascape"]:hover, #menu a[href="#email"]:hover {
+#menu a[href="#what_is_betascape"]:hover, #menu a[href="#whats_new"]:hover {
 	background-color: #e96f34;
 	color: #b31b08;
 }
-#menu a[href="#schedule"]:hover, #menu a[href="#contact"]:hover {
+#menu a[href="#schedule"]:hover, #menu a[href="#email"]:hover {
 	background-color: #bdd73c;
 	color: #5c8927;
 }
-#menu a[href="#in_the_news"]:hover {
+#menu a[href="#in_the_news"]:hover, #menu a[href="#contact"]:hover {
 	background-color: #57b7df;
 	color: #05638a;
 }
@@ -134,6 +149,9 @@ h2 + img {
 	color: #57b7df;
 	font-size: 14px;
 }
+.social_media_links:hover a {
+	color: #FCBA63;
+}
 .social_media_links img {
 	margin: 0px 10px;
 	float: left;
@@ -147,7 +165,7 @@ h2 + img {
 	line-height: 16px;
 }
 .day p {
-	margin: 0px 30px 15px 45px;
+	margin: 0px 30px 15px 60px;
 }
 input[type="text"], textarea {
 	width: 400px;
