@@ -22,28 +22,23 @@ a {
 a:hover {
 	color: #FCBA63;
 }
-@font-face {
-	font-family: chunk;
-	src: url("Chunkfive.otf");
-}
 h1 {
 	background-image: url("betascape-logo.png");
 	background-repeat: no-repeat;
-	width: 905px;
+	width: 510px;
 	height: 165px;
-	margin: 0px auto;
+	margin: 15px 30px 30px 30px;
 	text-indent: -9999px;
+	float: left;
 }
 h2 {
-	color: #D67F2A;
-	font-family: chunk, arial, helvetica, sans-serif;
+	color: #d67f2a;
 	font-size: 22px;
-	letter-spacing: .1em;
 	background-color: #FCBA63;
-	background-image: url("h2_points.png");
-	background-position: right;
+	background-image: url("white_triangle.png");
+	background-position: top right;
 	background-repeat: no-repeat;
-	width: 745px;
+	width: 645px;
 	padding: 10px 0px 8px 55px;
 	margin: 20px 0px 20px -40px;
 }
@@ -51,8 +46,16 @@ h3 {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 18px;
 	line-height: 22px;
-	margin-left: 30px;
-	color: #444;
+	padding: 5px 0px 5px 30px;
+	color: #008ab3;
+	background-color: #ace3fa;
+	background-image: url("white_triangle.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+	width: 550px;
+	margin-bottom: 15px;
+	cursor: hand;
+	cursor: pointer;
 }
 hr {
 	margin-top: 30px;
@@ -63,46 +66,88 @@ h2 + img {
 	float: left;
 }
 #main_container {
-	/*background-image: url("a-little-shadow.png");
-	background-position: 41% 50%;
-	background-repeat: repeat-y; */
+	margin: 0px auto;
+	background-image: url("background_shadow.png");
+	background-position: center;
+	background-repeat: repeat-y; 
+}
+#header {
+	position: relative;
+	height: 200px;
+}
+#header p {
+	color: #828282;
+	position: absolute;
+	bottom: 5px;
+	left: 555px;
+}
+#header p, #header a {
+	font-size: 22px;
 }
 #content {
 	width: 960px;
 	margin: 0px auto;
 	padding: 20px 0px 5px 0px;
 	background-color: #fff;
-	-moz-box-shadow: 0 0 60px #333;
-	-webkit-box-shadow: 0 0 60px #333;
-	box-shadow: 0 0 60px #333;
 }
 #menu {
-	margin: 30px;
+	margin: 20px 0px 40px 30px;
+	clear: both;
 }
 #menu a {
 	background-color: #FCBA63;
-	color: #D67F2A;
-	padding: 10px 20px;
-	margin-right: 20px;
+	background-image: url("white_triangle.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+	color: #d67f2a;
+	padding: 10px 36px 10px 14px;
+	margin-right: 15px;
 }
-#menu a:hover {
-	background-color: #D67F2A;
-	color: #FCBA63;
+#menu a[href="#what_is_betascape"]:hover, #menu a[href="#email"]:hover {
+	background-color: #e96f34;
+	color: #b31b08;
+}
+#menu a[href="#schedule"]:hover, #menu a[href="#contact"]:hover {
+	background-color: #bdd73c;
+	color: #5c8927;
+}
+#menu a[href="#in_the_news"]:hover {
+	background-color: #57b7df;
+	color: #05638a;
 }
 #external_links_container {
-	width: 160px;
+	width: 260px;
 	height: 1000px;
 	border-left: solid 1px #e1e1e1;
 	float: right;
 	position: relative;
-	text-align: center;
-	margin: 20px 0px 0px 30px;
+	margin: 0px 0px 0px 30px;
 }
-#external_links_container img {
-	margin-bottom: 30px;
+.social_media_links {
+	margin-bottom: 15px;
 }
-.event + p {
-	margin-bottom: 45px;
+.social_media_links a {
+	color: #008ab3;
+	font-size: 18px;
+}
+.social_media_links br+a {
+	color: #57b7df;
+	font-size: 14px;
+}
+.social_media_links img {
+	margin: 0px 10px;
+	float: left;
+}
+#tweets, iframe, img[src="artscape.png"] {
+	margin: 15px 0px 15px 10px;
+}
+#tweets p, #tweets a {
+	font-size: 12px;
+	margin: 0px;
+	line-height: 16px;
+}
+.day p {
+	margin: 0px 30px 15px 45px;
 }
 input[type="text"], textarea {
 	width: 400px;
