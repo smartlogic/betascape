@@ -2,14 +2,33 @@
 
 $(document).ready(function(){
 						   
-	$(".day h4, .day h5, .day p").hide();
+	$(".day").hide();
 	
-	$(".day").toggle(function() {
-		$("h4, h5, p", this).show(300);
-		$("h3", this).css({'background-color':'#FCBA63', 'color':'#d67f2a'});
+	$("h3").hover(function() {
+			$(this).css({'background-color':'#bdd73c', 'color':'#5c8927'});
+		}, function() {
+			$(this).css({'background-color':'#ace3fa', 'color':'#008ab3'});
+		});
+	
+	$("h3").toggle(function() {
+		$("+.day", this).show(300);
+		$(this).css({'background-color':'#FCBA63', 'color':'#d67f2a'});
+		
+		$(this).hover(function() {
+			$(this).css({'background-color':'#e96f34', 'color':'#b31b08'});
+		}, function() {
+			$(this).css({'background-color':'#FCBA63', 'color':'#d67f2a'});
+		});
+		
 	}, function() {
-		$("h4, h5, p", this).hide(300);
-		$("h3", this).css({'background-color':'#ace3fa', 'color':'#008ab3'});
+		$("+.day", this).hide(300);
+		$(this).css({'background-color':'#ace3fa', 'color':'#008ab3'});
+		
+		$(this).hover(function() {
+			$(this).css({'background-color':'#bdd73c', 'color':'#5c8927'});
+		}, function() {
+			$(this).css({'background-color':'#ace3fa', 'color':'#008ab3'});
+		});
 	});	
 		
 });
