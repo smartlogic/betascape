@@ -115,19 +115,19 @@ h2 + img {
 	background-position: top right;
 	background-repeat: no-repeat;
 	color: #d67f2a;
-	font-size: 14px;
-	padding: 8px 32px 8px 10px;
-	margin-right: 11px;
+	font-size: 13px;
+	padding: 6px 32px 6px 10px;
+	margin-right: 8px;
 }
-#menu a[href="#what_is_betascape"]:hover, #menu a[href="#in_the_news"]:hover, #menu a[href="#contact"]:hover {
+#menu a[href="#what_is_betascape"]:hover, #menu a[href="#participants"]:hover, #menu a[href="#contact"]:hover {
 	background-color: #e96f34;
 	color: #b31b08;
 }
-#menu a[href="#participants"]:hover, #menu a[href="#whats_new"]:hover {
+#menu a[href="#schedule"]:hover, #menu a[href="#whats_new"]:hover {
 	background-color: #bdd73c;
 	color: #5c8927;
 }
-#menu a[href="#schedule"]:hover, #menu a[href="#email"]:hover {
+#menu a[href="#in_the_news"]:hover, #menu a[href="#email"]:hover {
 	background-color: #57b7df;
 	color: #05638a;
 }
@@ -140,7 +140,7 @@ h2 + img {
 	margin-left: 30px;
 }
 #participant_logos {
-	width: 670px;
+	width: 930px;
 	margin-left: 15px;
 	text-align: center;
 }
