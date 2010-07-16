@@ -181,7 +181,7 @@ img[src="mp3car.png"], img[src="innovate_baltimore.jpg"] {
 	margin: 0px 10px;
 	float: left;
 }
-#tweets, iframe, img[src="artscape.png"] {
+#tweets, iframe, img[src="artscape.png"], img[src="photostream.png"] {
 	margin: 15px 0px 15px 10px;
 }
 #tweets p, #tweets a {
